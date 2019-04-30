@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h1>Cjenik</h1>
+
+<form method="post" action="/naruci">
+    <input type="text" name="ime" placeholder="Unesi ime i prezime">
+    <br>
+
+    <input type="text" name="telefon" placeholder="Unesi broj telefona">
+    <br>
+
+    <input type="text" name="adresa" placeholder="Unesi adresu">
+    <br>
+
+    <select name="mobiteli">
+      <option value="samsung-galaxy">Samsung Galaxy S10 G973F</option>
+      <option value="honor">Honor 10 Lite 32GB DS</option>
+      <option value="sony">Sony Xperia XZ2 Silver DS</option>
+      <option value="huawei">Huawei P20 lite DS</option>
+    </select>
+    <br>
+    <select name="tarife">
+      <option value="neogranicena">Neograničena</option>
+      <option value="obiteljska">Obiteljska</option>
+      <option value="ekipna">Ekipna</option>
+    </select>
+
+    <br>
+
+    <button type="submit">Naruči!</button>
+</form>
+
+{% endblock content %}
